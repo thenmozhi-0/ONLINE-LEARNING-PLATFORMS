@@ -1,0 +1,17 @@
+
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; background: #f7f7fb; margin: 0; }
+.container { max-width: 960px; margin: 0 auto; padding: 16px; }
+header { display: flex; align-items: center; justify-content: space-between; }
+h1 { margin: 8px 0; }
+.card { background: white; padding: 16px; margin: 8px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+input { width: 100%; padding: 10px; margin: 6px 0; border: 1px solid #ddd; border-radius: 8px; }
+button { padding: 10px 14px; border: 0; border-radius: 10px; cursor: pointer; background: #2563eb; color: white; }
+button.secondary { background: #6b7280; }
+#courses { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.course-card { padding: 12px; border: 1px solid #eee; border-radius: 12px; background: white; }
+.course-card h3 { margin: 6px 0; }
+.hidden { display: none; }
+.hint { color: #6b7280; font-size: 12px; }
+#user-info { font-weight: 600; }
+footer { text-align: center; color: #6b7280; margin-top: 20px; }
