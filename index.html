@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Online Learning Platform</h1>
+      <div id="user-info"></div>
+    </header>
+
+    <section id="auth-section">
+      <div class="card">
+        <h2>Register</h2>
+        <input id="reg-name" placeholder="Name"/>
+        <input id="reg-email" placeholder="Email"/>
+        <input id="reg-password" placeholder="Password" type="password"/>
+        <button id="btn-register">Register</button>
+        <p class="hint">Already registered? Login below.</p>
+      </div>
+
+      <div class="card">
+        <h2>Login</h2>
+        <input id="log-email" placeholder="Email"/>
+        <input id="log-password" placeholder="Password" type="password"/>
+        <button id="btn-login">Login</button>
+      </div>
+    </section>
+
+    <section id="courses-section" class="hidden">
+      <h2>Courses</h2>
+      <div id="courses"></div>
+      <hr/>
+      <div id="player" class="hidden">
+        <h3 id="course-title"></h3>
+        <video id="video" width="720" controls></video>
+        <button id="btn-start-quiz">Start Quiz</button>
+      </div>
+      <div id="quiz" class="hidden"></div>
+      <div id="progress" class="card"></div>
+    </section>
+
+    <footer>
+      <small>Built for CODTECH Internship Task - 2</small>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
